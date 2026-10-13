@@ -1,0 +1,19 @@
+/* AM4 Route Calculator – tool-specific styles (shared styles: ../shared_resources/am4tools.css) */
+.am4 .route-sel{display:grid;grid-template-columns:1fr 1fr;gap:.75rem 1.5rem}
+@media(max-width:600px){.am4 .route-sel{grid-template-columns:1fr}}
+.am4 .grp-title{font-size:.8rem;font-weight:700;margin-bottom:.35rem}
+.am4 .cfg-note{font-size:.68rem;color:var(--am4-text2);font-weight:400}
+.am4 .coverage{font-size:.8rem;color:var(--am4-text2);margin-bottom:.5rem}
+.am4 .coverage-bars{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem;margin-bottom:.75rem}
+.am4 .demand-bar{height:6px;border-radius:3px;background:var(--am4-surface2);margin-top:.35rem;overflow:hidden}
+.am4 .demand-fill{height:100%;border-radius:3px;background:var(--am4-green);transition:width .3s}
+.am4 .demand-fill.j{background:var(--am4-gold)}
+.am4 .demand-fill.f{background:var(--am4-purple)}
+.am4 .fleet-table th,.am4 .fleet-table td{background:transparent}
+.am4 .plan-card .table-wrap{background:transparent;border:none;border-radius:0}
+.am4 .chip{font-size:.7rem;padding:.25rem .5rem;border-radius:6px;border:1px solid var(--am4-border);background:var(--am4-surface2);color:var(--am4-text2);cursor:pointer;font:inherit;font-size:.7rem;line-height:1.5}
+.am4 .chip.active{border-color:var(--am4-accent);color:var(--am4-accent);background:rgba(59,130,246,.1)}
+.am4 .chip:focus-visible{outline:2px solid var(--am4-accent2);outline-offset:2px}
+.am4 #resultsTable th{position:sticky;top:0}
+.am4 #resultsTable tr.best td{background:var(--am4-green-bg)}
+.am4 #resultsTable tbody tr:hover td{background:var(--am4-surface2)}
